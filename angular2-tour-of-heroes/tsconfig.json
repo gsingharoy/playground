@@ -8,5 +8,19 @@
     "experimentalDecorators": true,
     "removeComments": false,
     "noImplicitAny": false
+  },
+  "filesGlob": [
+    "main.ts",
+    "typings.d.ts",
+    "app/**/*.ts",
+    "!app/**/*.spec.ts"
+  ],
+  "files": [
+    "app/app.component.ts",
+    "app/hero-detail.component.ts",
+    "app/main.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": true
   }
 }
