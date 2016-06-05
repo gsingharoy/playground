@@ -18,8 +18,10 @@
   "files": [
     "app/app.component.ts",
     "app/hero-detail.component.ts",
+    "app/hero.service.ts",
     "app/hero.ts",
-    "app/main.ts"
+    "app/main.ts",
+    "app/mock-heroes.ts"
   ],
   "atom": {
     "rewriteTsconfig": true
