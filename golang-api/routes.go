@@ -6,15 +6,6 @@ import (
     "github.com/gorilla/mux"
 )
 
-type Route struct {
-    Name        string
-    Method      string
-    Pattern     string
-    HandlerFunc http.HandlerFunc
-}
-
-type Routes []Route
-
 func NewRouter() *mux.Router {
 
     router := mux.NewRouter().StrictSlash(true)
@@ -32,25 +23,4 @@ func NewRouter() *mux.Router {
     }
 
     return router
-}
-
-var routes = Routes{
-    Route{
-        "Index",
-        "GET",
-        "/",
-        Index,
-    },
-    Route{
-        "MinionIndex",
-        "GET",
-        "/minions",
-        MinionIndex,
-    },
-    Route{
-        "MinionShow",
-        "GET",
-        "/minions/{minionId}",
-        MinionShow,
-    },
 }
