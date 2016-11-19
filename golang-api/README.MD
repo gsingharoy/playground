@@ -13,7 +13,6 @@ mkdir $HOME/work
 ```
 Add the following lines to your `~/.bash_profile` or `~/.profile`.
 ```
-# Add the following lines to the
 export GOPATH=$HOME/work
 export PATH=$PATH:$GOPATH/bin
 ```
