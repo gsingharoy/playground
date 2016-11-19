@@ -38,3 +38,10 @@ Execute the newly created executable file
 ./golang-api
 ```
 Now go to http://localhost:8080.
+<br>
+This sample API has 4 actions. INDEX, SHOW, DELETE and POST for `minions`. Checkout http://localhost:8080/minions to fetch the list of minions.
+
+Add an entry by
+```
+curl -H "Content-Type: application/json" -d '{"name":"Luke"}' http://localhost:8080/minions
+```
